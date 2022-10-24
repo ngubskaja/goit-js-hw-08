@@ -39,11 +39,11 @@ function populateTextarea() {
    if(savedMessage){
     if (parsedMessage.email) {
       refs.input.value = parsedMessage.email;
-      formData[input.name] = parsedMessage.email;
+      formData[refs.input.name] = parsedMessage.email;
     }
     if (parsedMessage.message) {
        refs.textarea.value = parsedMessage.message;
-       formData[textarea.name] = parsedMessage.message;
+       formData[refs.textarea.name] = parsedMessage.message;
 }
    }
 }
